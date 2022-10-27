@@ -93,12 +93,6 @@ section {
   font-size: 26px;
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--color-brand);
-}
-
-
 /* NAVIGATION*/
 .site-nav {
   font-family: "Roboto", sans-serif;
@@ -143,6 +137,7 @@ section {
 .link-primary:hover,
 .link-primary:focus {
   color: var(--color-brand);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CONTACTS Styling */
@@ -232,6 +227,7 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -476,6 +472,7 @@ section {
 .regular-link:focus {
     background-color: var(--color-bcg-primary);
     border-color: var(--color-brand);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-link:hover .regular-icon,
@@ -629,6 +626,7 @@ section {
 .button-filter:focus {
   background-color: var(--color-brand);
   color: var(--color-bcg-primary);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -714,14 +712,8 @@ section {
 .cases-links:hover .overlay-text,
 .cases-links:focus .overlay-text {
   transform: translateY(0%);
-}
-
-.cases-links:hover .overlay-text,
-.cases-links:focus .overlay-text {
   opacity: 1;
 }
-
-
 
 /* MODAL */
 .backdrop {
