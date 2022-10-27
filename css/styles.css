@@ -711,13 +711,13 @@ section {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card-overlay:hover .overlay-text,
-.portfolio-card-overlay:focus .overlay-text {
+.cases-links:hover .overlay-text,
+.cases-links:focus .overlay-text {
   transform: translateY(0%);
 }
 
-.portfolio-card-overlay:hover .overlay-text,
-.portfolio-card-overlay:focus .overlay-text {
+.cases-links:hover .overlay-text,
+.cases-links:focus .overlay-text {
   opacity: 1;
 }
 
