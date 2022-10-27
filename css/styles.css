@@ -327,6 +327,28 @@ section {
   flex-basis: calc((100% - 60px) / 3 );
   padding: 0;
   margin: 0;
+  position: relative;
+  margin-right: 30px;
+}
+
+
+.work-type-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--color-bcg-primary);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
 }
 
 /* Секція 4 (Наша команда) */
