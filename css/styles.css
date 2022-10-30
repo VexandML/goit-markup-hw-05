@@ -132,12 +132,12 @@ section {
 .link-primary {
   color: var(--color-inverted);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-primary:hover,
 .link-primary:focus {
   color: var(--color-brand);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CONTACTS Styling */
@@ -227,10 +227,11 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #188ce8;
   color: var(--color-bcg-primary);
 }
@@ -460,7 +461,7 @@ section {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   box-sizing: border-box;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-icon {
@@ -472,7 +473,6 @@ section {
 .regular-link:focus {
     background-color: var(--color-bcg-primary);
     border-color: var(--color-brand);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-link:hover .regular-icon,
@@ -736,6 +736,7 @@ section {
   background-color: var(--color-bcg-primary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
